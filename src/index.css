@@ -49,6 +49,7 @@ html {
 }
 
 body {
+    /* width: 100%; */
     color: var(--white-color);
     overflow: hidden;
     /* background: seagreen; */
@@ -95,10 +96,13 @@ p {
 
 .container {
     perspective: 1500px;
+    width: 100%;
     perspective-origin: 50%;
+    
 }
 
 .box {
+    width: 100%;
     transform-style: preserve-3d;
     transform-origin: 50% 50% -50vW;
     transform: rotateY(0deg);
@@ -111,6 +115,7 @@ p {
     background: var(--bg-color);
     padding: 0 10%;
     backface-visibility: hidden;
+    /* background-color: red; */
 }
 
 .home {

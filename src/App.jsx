@@ -6,7 +6,7 @@ import { IoBriefcaseOutline, IoHome } from "react-icons/io5";
 
 const App = () => {
   return (
-    <div>
+    <div className=' h-[100%] '>
       {/* navbar  */}
 
       <nav className="nav fixed bottom-[2rem] left-[50%] w-[40rem] rounded-[5rem] z-[100] ">
@@ -34,8 +34,8 @@ const App = () => {
         </ul>
       </nav>
 
-      <div className="container w-[100vw] h-[100vh]">
-        <div className="box relative w-[100%] h-[100%]">
+      <div className="container  h-[100vh] ">
+        <div className="box h-[100vh]  w-[100vw]">
           {/* Home section  */}
           <section className="section home ">
             <div className="home-info">
