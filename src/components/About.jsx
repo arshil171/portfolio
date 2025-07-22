@@ -1,4 +1,4 @@
-import React from "react";
+
 import React, { useState } from "react";
 
 import { BiDetail } from "react-icons/bi";
@@ -43,10 +43,12 @@ const About = () => {
       <section className="section about">
         <div className="img-wrapper ">
           <div className="img-box about-img relative w-[28vw] h-[28vw] rounded-[50%] ">
-            <img src="image\Screenshot 2025-07-13 150322.png" alt="" />
+             <img src="image/Screenshot 2025-07-13 150322.png" alt="" />
+            
           </div>
         </div>
-
+       
+         
         <div className="about-info ">
           <h2 className="title">About Me</h2>
           <h3>Full Stack Developer!</h3>

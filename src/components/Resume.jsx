@@ -1,4 +1,4 @@
-import React from "react";
+
 import React, { useState } from "react";
 
 import { BiDetail } from "react-icons/bi";
@@ -42,20 +42,20 @@ const Resume = () => {
   return (
     <div>
       <section className="section resume ">
-        <h2 className="title">Resume</h2>
+        <h2 className="title ">Resume</h2>
         <div className=" tab-box ">
           <button
-            className={` resume-list flex-1 py-2 font-medium ${
+            className={` resume-list flex-1 text-[25px] py-2 font-medium ${
               activeTab === "experience"
-                ? "border-b-4 border-cyan-400 text-cyan-400"
+                ? "border-b-4 bg-white border-cyan-400  text-cyan-400"
                 : ""
             }`}
             onClick={() => setActiveTab("experience")}
           >
-            <h3> Experience</h3>
+            <h3 className="cursor-pointer"> Experience</h3>
           </button>
           <button
-            className={`flex-1 py-2 font-medium ${
+            className={ ` cursor-pointer text-[25px] flex-1 py-2 font-medium ${
               activeTab === "skills"
                 ? "border-b-4 border-cyan-400 text-cyan-400"
                 : ""
@@ -65,7 +65,7 @@ const Resume = () => {
             Skills
           </button>
           <button
-            className={`flex-1 py-2 font-medium ${
+            className={`flex-1 cursor-pointer text-[25px] py-2 font-medium ${
               activeTab === "education"
                 ? "border-b-4 border-cyan-400 text-cyan-400"
                 : ""
