@@ -38,38 +38,35 @@ import { SiMongodb } from "react-icons/si";
 
 const Resume = () => {
 
-    const [activeTab, setActiveTab] = useState("experience");
+  const [activeTab, setActiveTab] = useState("experience");
   return (
     <div>
       <section className="section resume ">
         <h2 className="title ">Resume</h2>
         <div className=" tab-box ">
           <button
-            className={` resume-list flex-1 text-[25px] py-2 font-medium ${
-              activeTab === "experience"
-                ? "border-b-4 bg-white border-cyan-400  text-cyan-400"
-                : ""
-            }`}
+            className={` resume-list flex-1 text-[25px] py-2 font-medium ${activeTab === "experience"
+              ? "border-b-4 bg-white border-cyan-400  text-cyan-400"
+              : ""
+              }`}
             onClick={() => setActiveTab("experience")}
           >
             <h3 className="cursor-pointer"> Experience</h3>
           </button>
           <button
-            className={ ` cursor-pointer text-[25px] flex-1 py-2 font-medium ${
-              activeTab === "skills"
-                ? "border-b-4 border-cyan-400 text-cyan-400"
-                : ""
-            }`}
+            className={` cursor-pointer text-[25px] flex-1 py-2 font-medium ${activeTab === "skills"
+              ? "border-b-4 border-cyan-400 text-cyan-400"
+              : ""
+              }`}
             onClick={() => setActiveTab("skills")}
           >
             Skills
           </button>
           <button
-            className={`flex-1 cursor-pointer text-[25px] py-2 font-medium ${
-              activeTab === "education"
-                ? "border-b-4 border-cyan-400 text-cyan-400"
-                : ""
-            }`}
+            className={`flex-1 cursor-pointer text-[25px] py-2 font-medium ${activeTab === "education"
+              ? "border-b-4 border-cyan-400 text-cyan-400"
+              : ""
+              }`}
             onClick={() => setActiveTab("education")}
           >
             Education
@@ -83,29 +80,35 @@ const Resume = () => {
         
                         </div>
                       </div> */}
-          {activeTab === "experience" && (
-            <div className="tab-grid resume-box experience">
-              {[
-                ["2022 - Present", "Frontend Developer", "Google"],
-                ["2021 - 2022", "Full Stack Developer", "YouTube"],
-                ["2020 - 2021", "Backend Developer", "Infosys"],
-                ["2019 - 2020", "Frontend Developer Intern", "Amazon"],
-                ["2018 - 2019", "UI/UX Developer", "Microsoft"],
-                ["2017 - 2018", "Junior Developer", "Chevron"],
-              ].map(([year, title, company], i) => (
-                <div key={i} className=" tab-item resume-item ">
-                  <h4 className="">{year}</h4>
-                  <h4 className="">{title}</h4>
-                  <h4 className="">
-                    {company}
-                    <span className="" />
-                  </h4>
-                  <p className="">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </p>
-                </div>
-              ))}
-            </div>
+          {activeTab === "experience" && (<div>
+            I am a passionate Full Stack Developer with skills in HTML, CSS, JavaScript, React, Node.js, and MongoDB.
+
+            I enjoy building responsive and user-friendly web applications. I have worked on multiple projects like e-commerce platforms and booking systems, where I implemented features like authentication, cart functionality, and API integration.
+
+            I am eager to learn new technologies and looking for an opportunity to start my career as a developer.
+          </div>
+            // <div className="tab-grid resume-box experience">
+            //   {[
+            //     ["2022 - Present", "Frontend Developer", "Google"],
+            //     ["2021 - 2022", "Full Stack Developer", "YouTube"],
+            //     ["2020 - 2021", "Backend Developer", "Infosys"],
+            //     ["2019 - 2020", "Frontend Developer Intern", "Amazon"],
+            //     ["2018 - 2019", "UI/UX Developer", "Microsoft"],
+            //     ["2017 - 2018", "Junior Developer", "Chevron"],
+            //   ].map(([year, title, company], i) => (
+            //     <div key={i} className=" tab-item resume-item ">
+            //       <h4 className="">{year}</h4>
+            //       <h4 className="">{title}</h4>
+            //       <h4 className="">
+            //         {company}
+            //         <span className="" />
+            //       </h4>
+            //       <p className="">
+            //         Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            //       </p>
+            //     </div>
+            //   ))}
+            // </div>
           )}
 
           {activeTab === "skills" && (
@@ -117,15 +120,15 @@ const Resume = () => {
                 [<FaReact />, "React.js"],
                 [<RiTailwindCssFill />, "Tailwind CSS"],
                 [<FaBootstrap />, "Bootstrap"],
-                [<FaAngular />, "Angular"],
+                // [<FaAngular />, "Angular"],
                 [<FaNode />, "Node.js"],
                 [<FaJava />, "Java"],
-                [<FaPhp />, "PHP"],
+                // [<FaPhp />, "PHP"],
                 [<FaPython />, "Python"],
-                [<DiDjango />, "Django"],
+                // [<DiDjango />, "Django"],
                 [<SiMongodb />, "MongoDB"],
-                [<DiPostgresql />, "PostgreSQL"],
-                [<FaSketch />, "Sketch"],
+                // [<DiPostgresql />, "PostgreSQL"],
+                // [<FaSketch />, "Sketch"],
                 [<FaFigma />, "Figma"],
               ].map(([icon, name], idx) => (
                 <div key={idx} className="tab-item resume-item ">
@@ -136,41 +139,41 @@ const Resume = () => {
               ))}
             </div>
           )}
-
           {activeTab === "education" && (
             <div className="tab-grid resume-box education">
               {[
-                ["2024", "Programming Course", "Online Course"],
                 [
-                  "2022 - 2023",
-                  "Web Development Bootcamp",
-                  "Online Course Platform",
+                  "2025",
+                  "Full Stack Development Course",
+                  "Red & White Institute",
+                  "Completed a comprehensive full stack development course where I gained hands-on experience in building web applications using HTML, CSS, JavaScript, React, Node.js, and MongoDB. Developed real-world projects including e-commerce and booking systems."
                 ],
-                ["2020", "Certified Web Development", "Online Course"],
+
                 [
-                  "2017 - 2021",
+                  "2024 - 2027",
                   "Computer Engineering",
-                  "Gujrat Technological University",
+                  "Gujarat Technological University",
+                  "Currently pursuing a degree in Computer Engineering, focusing on software development, data structures, and web technologies. Actively working on practical projects to strengthen problem-solving and full stack development skills."
                 ],
-                ["2016 - 2017", "12th - sci", "Shree Narayana Guru vidhalaya"],
+
                 [
-                  "2021 - 2023",
-                  "Master Of Computer Engineering",
-                  "Gujrat Technological University",
+                  "2023 - 2024",
+                  "12th - Science",
+                  "Shree Narayana Guru Vidyalaya",
+                  "Completed higher secondary education with a science background, building a strong foundation in logical thinking, mathematics, and problem-solving, which supports my journey in software development."
                 ],
-              ].map(([year, course, type], idx) => (
-                <div key={idx} className="tab-item resume-item ">
+              ].map(([year, course, type, desc], idx) => (
+                <div key={idx} className="tab-item resume-item">
                   <h4>{year}</h4>
                   <h4>{course}</h4>
                   <h4>{type}</h4>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Perferendis ea debitis facere rem.
-                  </p>
+                  <p>{desc}</p>
                 </div>
               ))}
             </div>
           )}
+
+
         </div>
       </section>
     </div>

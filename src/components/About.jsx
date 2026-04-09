@@ -43,7 +43,7 @@ const About = () => {
       <section className="section about">
         <div className="img-wrapper ">
           <div className="img-box about-img relative w-[28vw] h-[28vw] rounded-[50%] ">
-             <img src="image/Screenshot 2025-07-13 150322.png" alt="" />
+             <img src="image/about_1.png" alt="" />
             
           </div>
         </div>

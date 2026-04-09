@@ -110,6 +110,22 @@ const Portfolio = () => {
                               "https://react-project-3-sigma.vercel.app/",
                               "https://github.com/arshil171/React-project-3.",
                             ],
+                            [
+                              "image",
+                              "E-Commerce_React.png",
+                              "Frontend React Project with Routing",
+                              " React.js ",
+                              "https://react-project-6-gamma.vercel.app/",
+                              "https://github.com/arshil171/react-project-6",
+                            ],
+                            [
+                              "image",
+                              "project_6.png",
+                              "Frontend React Project with Routing",
+                              " React.js ",
+                              "https://3d-animation-website-zeta.vercel.app/",
+                              "https://github.com/arshil171/3d_Animation_Website",
+                            ],
                           ].map(([img, img1, project, lang, priview, github], idx) => (
                             <div key={idx} className="tab-item portfolio-item ">
                               <div className="work-img ">
