@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import img1 from "../assets/main.png"
 
 import { BiDetail } from "react-icons/bi";
 import { DiDjango, DiPostgresql } from "react-icons/di";
@@ -85,7 +86,7 @@ const Home = () => {
 
         <div className="img-wrapper ">
           <div className="img-box home-img relative w-[28vw] h-[28vw] rounded-[50%] flex justify-center">
-            <img src="image\main.png" alt="" />
+            <img src={img1} alt="" />
           </div>
         </div>
       </section>
