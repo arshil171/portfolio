@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import img2 from "../assets/about_1.png"
 
 import { BiDetail } from "react-icons/bi";
 import { DiDjango, DiPostgresql } from "react-icons/di";
@@ -43,7 +44,7 @@ const About = () => {
       <section className="section about">
         <div className="img-wrapper ">
           <div className="img-box about-img relative w-[28vw] h-[28vw] rounded-[50%] ">
-             <img src="image/about_1.png" alt="" />
+             <img src={img2} alt="" />
             
           </div>
         </div>
