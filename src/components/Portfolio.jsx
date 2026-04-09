@@ -120,7 +120,7 @@ const Portfolio = () => {
                 [
                   img8,
                   "Frontend React Project with Routing",
-                  " React.js ",
+                  " HTML5 , CSS3 , JavaScript ",
                   "https://3d-animation-website-zeta.vercel.app/",
                   "https://github.com/arshil171/3d_Animation_Website",
                 ],
