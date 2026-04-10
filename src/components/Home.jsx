@@ -52,7 +52,7 @@ const Home = () => {
           </p>
 
           <div className="btn-sci  ">
-            <a href="#" className="btn  ">
+            <a href="https://drive.google.com/file/d/1M35dBJCK2M3ySkei5Ac-jYTWZBqGe17V/view?usp=drive_link" className="btn  ">
               Download CV{" "}
             </a>
             <div className="sci ">
